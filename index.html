@@ -246,9 +246,10 @@
             <div><span>REGION</span><strong>Rheinland-Pfalz / Deutschland</strong></div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/kickweb.de@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Neue KICKWEB Anfrage">
           <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_template" value="table">
           <div class="form-title">NEW CLUB REQUEST <span>●</span></div>
           <label>VEREIN<input name="verein" type="text" placeholder="z. B. SV Musterhausen" required></label>
           <label>ANSPRECHPARTNER<input name="name" type="text" placeholder="Vor- und Nachname" required></label>
@@ -263,8 +264,7 @@
           </label>
           <label>NACHRICHT<textarea name="nachricht" rows="5" placeholder="Was braucht euer Verein? Habt ihr schon eine Website?" required></textarea></label>
           <button class="btn btn-red btn-full" type="submit">ANFRAGE SENDEN ▶</button>
-          <p class="form-status" id="formStatus" aria-live="polite"></p>
-          <p class="form-note">Die Anfrage wird sicher über unseren Formular-Dienst an kickweb.de@gmail.com weitergeleitet. Beim ersten Versand kann eine einmalige Bestätigung der E-Mail-Adresse erforderlich sein.</p>
+          <p class="form-note">Die Anfrage wird über FormSubmit an <strong>kickweb.de@gmail.com</strong> weitergeleitet. Beim ersten Versand kann eine einmalige Bestätigung der E-Mail-Adresse erforderlich sein.</p>
         </form>
       </div>
     </section>
