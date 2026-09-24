@@ -1,21 +1,14 @@
-# KICKWEB.DE
+# KICKWEB.DE – GitHub Pages
 
-Retro-1998-inspired landing page for KICKWEB.DE, designed for GitHub Pages.
+Retro-1998-FIFA-inspirierte Website für KICKWEB.DE.
 
-## Features
-- Responsive one-page site
-- Retro sports-game / 1998 aesthetic
-- Pricing: 119 € / 199 € / 240 €
-- Maintenance: 25 € / 30 € / 40 € per month
-- Contact form via `mailto:kickweb.de@gmail.com`
-- Impressum and Datenschutz placeholders
-- KICKWEB logo asset included in `assets/kickweb-logo.png`
+## Dateien
+- index.html – Startseite
+- style.css – Design
+- script.js – Navigation + Kontaktformular
+- impressum.html – Platzhalter für finale Anbieterangaben
+- datenschutz.html – Platzhalter/Ergänzung vor Livegang
+- assets/ – Logo + Favicon
 
-## GitHub Pages
-1. Upload the contents of this `kickweb` folder to a GitHub repository.
-2. In GitHub: Settings → Pages → Deploy from branch.
-3. Select the main branch and `/root` folder.
-4. Add your domain later if desired.
-
-## Before launch
-Replace the placeholder address in `impressum.html` and complete `datenschutz.html` for the services actually used.
+## Kontaktformular
+Das Formular nutzt FormSubmit (AJAX), weil GitHub Pages keine serverseitige Formularverarbeitung bereitstellt. Die Anfragen werden an `kickweb.de@gmail.com` weitergeleitet. Beim ersten Einsatz muss die Zieladresse eventuell einmalig über die von FormSubmit gesendete Bestätigungs-E-Mail freigeschaltet werden.

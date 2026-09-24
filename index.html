@@ -98,7 +98,7 @@
             <div class="card-ribbon">START</div>
             <div class="sale-badge">ANGEBOT · -16,8 %</div>
             <div class="card-no">01</div>
-            <div class="price-old">119 €</div><h3>99 €</h3>
+            <div class="price-old">119 €</div><h3>99 €</h3><div class="price-save">20 € RABATT · DU SPARST 20 €</div>
             <p class="price-sub">DIE EINFACHE VEREINSSEITE</p>
             <ul>
               <li>One-Page Website</li>
@@ -116,7 +116,7 @@
             <div class="sale-badge">ANGEBOT · -10,1 %</div>
             <div class="card-ribbon blue">PLUS</div>
             <div class="card-no">02</div>
-            <div class="price-old">199 €</div><h3>179 €</h3>
+            <div class="price-old">199 €</div><h3>179 €</h3><div class="price-save">20 € RABATT · DU SPARST 20 €</div>
             <p class="price-sub">DIE RICHTIGE VEREINSWEBSITE</p>
             <ul>
               <li>Alles aus START</li>
@@ -134,7 +134,7 @@
             <div class="card-ribbon red">PRO</div>
             <div class="sale-badge">ANGEBOT · -8,3 %</div>
             <div class="card-no">03</div>
-            <div class="price-old">240 €</div><h3>220 €</h3>
+            <div class="price-old">240 €</div><h3>220 €</h3><div class="price-save">20 € RABATT · DU SPARST 20 €</div>
             <p class="price-sub">DIE KOMPLETTE KLEINE VEREINSPRÄSENZ</p>
             <ul>
               <li>Alles aus PLUS</li>
@@ -199,6 +199,8 @@
           </div>
         </div>
         <form class="contact-form" id="contactForm">
+          <input type="hidden" name="_subject" value="Neue KICKWEB Anfrage">
+          <input type="hidden" name="_captcha" value="true">
           <div class="form-title">NEW CLUB REQUEST <span>●</span></div>
           <label>VEREIN<input name="verein" type="text" placeholder="z. B. SV Musterhausen" required></label>
           <label>ANSPRECHPARTNER<input name="name" type="text" placeholder="Vor- und Nachname" required></label>
@@ -213,7 +215,8 @@
           </label>
           <label>NACHRICHT<textarea name="nachricht" rows="5" placeholder="Was braucht euer Verein? Habt ihr schon eine Website?" required></textarea></label>
           <button class="btn btn-red btn-full" type="submit">ANFRAGE SENDEN ▶</button>
-          <p class="form-note">Beim Absenden wird eine fertige E-Mail an kickweb.de@gmail.com erstellt. Falls kein Mailprogramm geöffnet wird, kannst du die E-Mail-Adresse direkt anklicken.</p>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+          <p class="form-note">Die Anfrage wird sicher über unseren Formular-Dienst an kickweb.de@gmail.com weitergeleitet. Beim ersten Versand kann eine einmalige Bestätigung der E-Mail-Adresse erforderlich sein.</p>
         </form>
       </div>
     </section>
