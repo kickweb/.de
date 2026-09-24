@@ -1,17 +1,21 @@
-# KICKWEB.DE – Demo Website
+# KICKWEB.DE
 
-GitHub-Pages-ready static website for the KICKWEB.DE concept.
+Retro-1998-inspired landing page for KICKWEB.DE, designed for GitHub Pages.
 
-## Struktur
-- `index.html` – Startseite
-- `style.css` – Design / responsive Layout
-- `script.js` – minimale UI-Verbesserungen
-- `impressum.html` – Demo/Platzhalter
-- `datenschutz.html` – Demo/Platzhalter
-- `assets/favicon.svg` – Favicon
+## Features
+- Responsive one-page site
+- Retro sports-game / 1998 aesthetic
+- Pricing: 119 € / 199 € / 240 €
+- Maintenance: 25 € / 30 € / 40 € per month
+- Contact form via `mailto:kickweb.de@gmail.com`
+- Impressum and Datenschutz placeholders
+- KICKWEB logo asset included in `assets/kickweb-logo.png`
 
-## Vor Livegang anpassen
-1. Echte E-Mail-Adresse in `index.html` einsetzen.
-2. Echte Anschrift in `impressum.html` einsetzen.
-3. Datenschutz finalisieren und an tatsächliche Dienste/Formulare anpassen.
-4. Optional Domain `kickweb.de` mit GitHub Pages verbinden.
+## GitHub Pages
+1. Upload the contents of this `kickweb` folder to a GitHub repository.
+2. In GitHub: Settings → Pages → Deploy from branch.
+3. Select the main branch and `/root` folder.
+4. Add your domain later if desired.
+
+## Before launch
+Replace the placeholder address in `impressum.html` and complete `datenschutz.html` for the services actually used.
