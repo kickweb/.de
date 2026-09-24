@@ -246,25 +246,28 @@
             <div><span>REGION</span><strong>Rheinland-Pfalz / Deutschland</strong></div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm" action="https://formsubmit.co/kickweb.de@gmail.com" method="POST">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/kickweb.de@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Neue KICKWEB Anfrage">
-          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_url" value="https://kickweb.de/">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
           <div class="form-title">NEW CLUB REQUEST <span>●</span></div>
           <label>VEREIN<input name="verein" type="text" placeholder="z. B. SV Musterhausen" required></label>
           <label>ANSPRECHPARTNER<input name="name" type="text" placeholder="Vor- und Nachname" required></label>
           <label>E-MAIL<input name="email" type="email" placeholder="verein@example.de" required></label>
           <label>PAKET
-            <select name="paket">
+            <select name="paket" required>
               <option value="START – 99 € (Angebot statt 119 €)">START – 99 € (Angebot statt 119 €)</option>
               <option value="PLUS – 179 € (Angebot statt 199 €)">PLUS – 179 € (Angebot statt 199 €)</option>
               <option value="PRO – 220 € (Angebot statt 240 €)">PRO – 220 € (Angebot statt 240 €)</option>
-              <option value="noch unsicher">NOCH UNSICHER</option>
+              <option value="NOCH UNSICHER">NOCH UNSICHER</option>
             </select>
           </label>
           <label>NACHRICHT<textarea name="nachricht" rows="5" placeholder="Was braucht euer Verein? Habt ihr schon eine Website?" required></textarea></label>
-          <button class="btn btn-red btn-full" type="submit">ANFRAGE SENDEN ▶</button>
-          <p class="form-note">Die Anfrage wird über FormSubmit an <strong>kickweb.de@gmail.com</strong> weitergeleitet. Beim ersten Versand kann eine einmalige Bestätigung der E-Mail-Adresse erforderlich sein.</p>
+          <button class="btn btn-red btn-full" id="submitButton" type="submit">ANFRAGE SENDEN ▶</button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          <p class="form-note">Direkt an <strong>kickweb.de@gmail.com</strong>. Beim ersten Versand muss KICKWEB die FormSubmit-Zieladresse eventuell einmalig bestätigen.</p>
         </form>
       </div>
     </section>
